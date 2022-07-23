@@ -19,11 +19,11 @@ const DeleteAllTasks = () => {
 const styles = StyleSheet.create({
     deleteAllBadge: {
         position: 'absolute',
-        right: 20,
-        top: 20,
+        right: 40,
+        top: 60,
         backgroundColor: 'red',
-        width: 50,
-        height: 50,
+        width: 30,
+        height: 30,
         borderRadius: 5,
         justifyContent: 'center',
         alignItems: 'center',

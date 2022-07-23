@@ -8,22 +8,8 @@ const Tasks = props => {
     return (
         <View style={styles.tasksWrapper}>
             <View style={styles.items}>
-                {props.status == 'todo'
-                    ?
-                    (
-                        <View>
-                            <Text style={styles.subTitle}>Todo</Text>
-                            {state.tasks.todo.map(task => <Task key={task.id} status='todo' task={task} />)}
-                        </View>
-                    )
-                    :
-                    (
-                        <View>
-                            <Text style={styles.subTitle}>Completed</Text>
-                            {state.tasks.completed.map(task => <Task key={task.id} status='completed' task={task} />)}
-                        </View>
-                    )
-                }
+                <Text style={styles.subTitle}>{props.status}</Text>
+                {state.tasks[props.status].map(task => <Task key={task.id} status={props.status} task={task} />)}
             </View>
         </View>
     )

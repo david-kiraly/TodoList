@@ -32,32 +32,35 @@ const AddTask = () => {
 
 const styles = StyleSheet.create({
     writeTaskWrapper: {
-        position: 'absolute',
-        bottom: 60,
+        position: 'relative',
+        bottom: 20,
         width: '100%',
         flexDirection: 'row',
-        justifyContent: 'space-around',
+        justifyContent: 'space-between',
         alignItems: 'center'
     },
     input: {
         padding: 15,
-        width: 250,
+        width: '80%',
         backgroundColor: '#fff',
         borderRadius: 5,
         borderColor: '#c0c0c0',
         borderWidth: 1,
     },
     addWrapper: {
-        width: 60,
-        height: 60,
+        width: 50,
+        height: 50,
         backgroundColor: '#fff',
-        borderRadius: 60,
+        borderRadius: 50,
         justifyContent: 'center',
         alignItems: 'center',
         borderColor: '#c0c0c0',
-        borderWidth: 1,
+        borderWidth: 1
     },
-    addText: {}
+    addText: {
+        fontSize: 30,
+        color: '#c0c0c0',
+    }
 })
 
 export default AddTask
