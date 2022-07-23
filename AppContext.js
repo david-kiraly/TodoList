@@ -50,6 +50,11 @@ const AppReducer = (state, action) => {
             persistData(newState)
             return newState
 
+        case 'DELETE_ALL_TASKS':
+            newState = {...initialStateHardCoded}
+            persistData(newState)
+            return newState
+
         default:
             newState = { ...state }
             persistData(newState)
